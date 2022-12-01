@@ -1,0 +1,24 @@
+{% extends "layout.html" %} {% block content %}
+
+<script type="text/javascript" src="{{ url_for('static', filename = 'home.js') }}"></script>
+
+<script>
+    let data = {{data | tojson}}
+</script>
+<br>
+<div class="row justify-content-center header">
+    <div class="col-md-8">
+        <span class="bold"> Are you ready to become the next David Beckham? </span>
+        <br>
+        <span class="small">
+                    Click on a freekick to begin learning how to perform freekicks like David Beckham!
+                </span>
+    </div>
+    <div class="col-md-4 embed-responsive embed-responsive-16by9">
+        <iframe src="https://gifer.com/embed/Auge" class="embed-responsive-item" frameBorder="0" title="David Beckham performing freekick" allowFullScreen></iframe>
+    </div>
+</div>
+<div class="row justify-content-center" id="freekick_buttons">
+</div>
+
+{% endblock %}

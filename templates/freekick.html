@@ -1,0 +1,38 @@
+{% extends "layout.html" %} {% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'freekick.js') }}"></script>
+
+<script>
+    let freekick = {{freekick | tojson}}
+</script>
+
+<div id="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="player_name">
+                {{ freekick.name }} Free Kick
+            </div>
+        </div>
+        <br> 
+        <div class="col-md-9">
+            <div id="learning_data" class="embed-responsive embed-responsive-16by9">
+            </div>
+        </div>
+    </div>
+    <br> 
+    <div class="row justify-content-center"> 
+        <div class="col-md-9">
+            <div class="freekick_info">
+                <p class="size"> <span class="bold_learning">Description:</span> {{ freekick.description }}</p>
+                <p class="size"> <span class="bold_learning">Execution:</span> {{ freekick.execution }}</p>
+                <p class="size"> <span class="bold_learning">Goal:</span> {{ freekick.goal }}</p> 
+                <a class="btn btn_color" href=/freekick/{{freekick.prev_page}}>Prev</a>
+                <a id="nextb" class="btn btn_color" href=/freekick/{{freekick.next_page}}>Next</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    {% endblock %}

@@ -1,0 +1,367 @@
+a {
+    color: black;
+}
+
+body {
+    background-color: #D8DFEE;
+}
+
+#start_quiz {
+    font-size: 2rem;
+}
+
+#submit_button {
+    background-color: lightgrey;
+    color: black;
+}
+
+#stuck_button {
+    background-color: lightgrey;
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.bold_large {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.header {
+    font-size: 40px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #174785;
+    color: white;
+    margin-bottom: 10px;
+    min-height: 50vh;
+}
+
+.quiz_header {
+    font-size: 4rem;
+    padding: 15px;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.small {
+    font-size: 16px;
+}
+
+.large {
+    font-size: 30px;
+}
+
+.float {
+    float: left;
+}
+
+.padding {
+    padding: 2px;
+}
+
+.padding_quiz {
+    padding: 5px;
+}
+
+
+/*Homepage*/
+
+.post {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    text-align: center;
+    vertical-align: center;
+}
+
+.post_search {
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.player_name_homepage {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.player_rating_homepage {
+    text-align: left;
+    font-size: 20px;
+    margin-right: 100px;
+}
+
+.player_position_homepage {
+    text-align: right;
+    font-size: 20px;
+}
+
+.link-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.freekick-link {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #174785;
+}
+
+.bounce:hover {
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -70px, 0);
+    }
+}
+
+
+/*View Page*/
+
+.btn {
+    background-color: #174785;
+    color: white;
+}
+
+.text_size {
+    font-size: 24px;
+}
+
+.player_name {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.player_image {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.img-fluid2 {
+    height: 300px;
+}
+
+.player_rating {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+.player_info {
+    vertical-align: middle;
+    text-align: justify;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.freekick_info {
+    padding: 20px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #174785;
+    font-size: 15px;
+}
+
+.mcqs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #174785;
+    font-size: 15px;
+}
+
+.player_nationality {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.player_clubs {
+    vertical-align: middle;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.list {
+    padding-left: 45px;
+}
+
+.red {
+    color: red;
+}
+
+
+/*add.html*/
+
+.input_box {
+    width: 100%;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/* Learning Page */
+
+.bold_learning {
+    font-weight: bold;
+    font-size: large;
+}
+
+.size {
+    font-size: medium;
+}
+
+.btn_color {
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* Quiz */
+
+#question {
+    margin-bottom: 30px;
+}
+
+.end_btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.end_btn_container {
+    margin-bottom: 20px;
+}
+
+#quiz_data {
+    text-align: center;
+    position: relative;
+}
+
+.quiz_home_q {
+    font-size: xx-large;
+}
+
+.img-fluid3 {
+    height: 400px;
+}
+
+.img-fluid4 {
+    height: 400px;
+}
+
+#quiz_data #text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz_stats_header {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.quiz_stats_feedback {
+    color: #174785;
+}
+
+.quiz_stats {
+    padding: 10px 100px 10px 100px;
+}
+
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    //margin-bottom: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 20px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+    //-bottom: 
+}
+
+#learning_data {
+    border: 5px solid #174785;
+}
+
+.result_score {
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.result_btns {
+    display: inline-block;
+}

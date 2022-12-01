@@ -1,0 +1,41 @@
+{% extends "layout.html" %} {% block content %}
+<script>
+    let quiz_score = {{score | tojson}}
+    let wrong_answers = {{wrong | tojson}}
+    let wrong_ans_feedback = {{wrong_feedback | tojson}}
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'quiz_end.js') }}"></script>
+
+
+<br>
+
+<div class="row header">
+    <div class="col-md-8">
+        <div class="result_message">
+        </div>  
+        <div class="result_score">               
+        </div>
+    </div>
+    <div class="col-md-4 embed-responsive embed-responsive-16by9">
+        {% set score = score %}
+        {% if score >= 4 %}
+        <iframe src="https://gifer.com/embed/BrNF" class="embed-responsive-item" frameBorder="0" title="Cheering soccer player" allowFullScreen></iframe>
+        {% else %}
+        <iframe src="https://gifer.com/embed/8tgW" class="embed-responsive-item" frameBorder="0" title="Sad David Beckham" allowFullScreen></iframe>
+        {% endif %}
+    </div>
+</div>
+
+<div class="quiz_header">
+    <div class="result_btns">
+        <a id="start_quiz" class="btn" href=/freekick/1>Learn again</a>
+        <a id="start_quiz" class="btn" href=/quiz_home>Try the quiz again</a>
+    </div>   
+</div>
+<div class="quiz_stats">
+
+
+</div>
+
+
+{% endblock %}

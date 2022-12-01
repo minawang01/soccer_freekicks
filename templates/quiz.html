@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <script type="text/javascript" src="{{ url_for('static', filename = 'quiz.js') }}"></script>
+
+    <script>
+        let data = {{data | tojson}}
+    </script>
+
+    <div id="container">
+        <div id="dialog">
+            <p>Are you sure you want to leave the quiz? Current quiz data will be lost if you leave.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <div class="player_name">
+                    {{data.title}}
+                </div>
+            </div>
+            <br>
+            <div class="col-md-9">
+                <div id="quiz_data">
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-md-9 mcqs">
+                <h2 id="question"> {{ data.question }}</h2>
+                <div class="multiple_choice_answers">
+                    <input type="checkbox" id="answer1">
+                    <label for="answer1"> {{ data.answer1 }}</label><br>
+                    <input type="checkbox" id="answer2">
+                    <label for="answer2"> {{ data.answer2 }}</label><br>
+                    <input type="checkbox" id="answer3">
+                    <label for="answer3"> {{ data.answer3 }}</label><br>
+                    <input type="checkbox" id="answer4">
+                    <label for="answer4"> {{ data.answer4 }}</label><br>
+                    <a class="btn" id="submit_button">Submit</a>
+                    <button class="btn" id="stuck_button">Stuck? Go back and learn</button>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
